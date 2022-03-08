@@ -1,26 +1,31 @@
-# Тестовое задание
+# Small vue-cli app example
 
-## Запуск проекта
+- vue3 script setup Composition API code example
+- vue Options style code example
+- simple form validation
+- fake API service
 
-Если не установлен vue-cli
+## How to run the project
+
+If you don't have `vue-cli` installed:
 
 ```
 npm install -g @vue/cli
 ```
 
-Возможно, он установлен, но нуждается в обновлении
+If it's already installed you may need to update it:
 
 ```
 npm update -g @vue/cli
 ```
 
-Далее устанавливаем зависимости
+Next, install the dependencies:
 
 ```
 npm install
 ```
 
-Запуск
+Start development server:
 
 ```
 npm run serve

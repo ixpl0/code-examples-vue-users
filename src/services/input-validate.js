@@ -1,11 +1,11 @@
 import store from '@/store';
 
-const notEmpty = (value) => (value ? null : 'должно быть заполнено');
+const notEmpty = (value) => (value ? null : 'can\'t be empty');
 
 const phone = (value) => {
   const isValid = /^\+?\d[\d-]*\d$/.test(value);
 
-  return isValid ? null : 'может начинаться с «+», может содержать только цифры и «-»';
+  return isValid ? null : 'may start with "+", may contain only numbers and "-"';
 };
 
 const rules = {

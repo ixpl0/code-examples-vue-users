@@ -22,7 +22,7 @@ export default {
         ElNotification({ title, message, type: 'error' });
 
         // eslint-disable-next-line no-await-in-loop
-        await this.$nextTick(); // фикс бага нотифаев Elements-Plus
+        await this.$nextTick(); // Elements-Plus notification bugfix
       }
 
       this.$store.commit('clearErrors');

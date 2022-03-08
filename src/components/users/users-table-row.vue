@@ -3,9 +3,9 @@ template(v-if="clonedUser")
   editable-field(v-model="clonedUser.name" :is-edit-mode="isEditMode")
   editable-field(v-model="clonedUser.phone" :is-edit-mode="isEditMode")
   .flex-right
-    el-button(v-if="isEditMode" @click="updateUser") Сохранить
-    el-button(v-else @click="editUser") Редактировать
-    el-button(@click="removeUser") Удалить
+    el-button(v-if="isEditMode" @click="updateUser") Save
+    el-button(v-else @click="editUser") Edit
+    el-button(@click="removeUser") Delete
 </template>
 
 <script>

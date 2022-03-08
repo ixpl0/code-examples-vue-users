@@ -1,8 +1,8 @@
 <template lang="pug">
 el-card.users
   .users-grid
-    .header Имя
-    .header Телефон
+    .header Name
+    .header Phone
     div
 
     users-table-row(
@@ -18,11 +18,11 @@ el-card.users
   .users-grid
     el-input(v-model="newUser.name" placeholder="Имя")
     el-input(v-model="newUser.phone" placeholder="Телефон")
-    el-button(type="primary" @click="createUser") Добавить
+    el-button(type="primary" @click="createUser") Add
 </template>
 
 <script setup>
-// пример кода на Composition API script setup (остальные компоненты в обычном Options стиле)
+// Composition API script setup code example (other components are in Options style)
 
 /* eslint-disable no-unused-vars */
 import { onMounted, ref } from 'vue';
@@ -36,14 +36,14 @@ const emptyUser = { name: '', phone: '' };
 const users = ref([]);
 const newUser = ref({ ...emptyUser });
 
-onMounted(async () => { // с реальным API на все асинхронные запросы нужны обработчики ошибок
+onMounted(async () => { // with a real API, all asynchronous requests need error handlers
   users.value = await usersApi.getUsers();
 });
 
 const createUser = async () => {
   const isValid = validate([
-    { fieldName: 'Имя', value: newUser.value.name, rule: 'notEmpty' },
-    { fieldName: 'Телефон', value: newUser.value.phone, rule: 'phone' },
+    { fieldName: 'Name', value: newUser.value.name, rule: 'notEmpty' },
+    { fieldName: 'Phone', value: newUser.value.phone, rule: 'phone' },
   ]);
 
   if (!isValid) {

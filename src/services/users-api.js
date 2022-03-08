@@ -1,11 +1,11 @@
-// имитирует сервис по работе с API (плейсхолдеры)
+// fake API service (placeholders)
 
 const fakeUsersFromServer = [
-  { id: 1, name: 'Анна', phone: '+79546570174' },
-  { id: 2, name: 'Максим', phone: '89546570122' },
-  { id: 3, name: 'Татьяна', phone: '+7954-657-0444' },
-  { id: 4, name: 'Андрей', phone: '8999-215-56-73' },
-  { id: 5, name: 'Кирилл', phone: '+313678989123' },
+  { id: 1, name: 'Ann', phone: '+19546570174' },
+  { id: 2, name: 'Max', phone: '89546570122' },
+  { id: 3, name: 'Alex', phone: '+3954-657-0444' },
+  { id: 4, name: 'Helen', phone: '0999-215-56-73' },
+  { id: 5, name: 'Michael', phone: '+313678989123' },
 ];
 
 const getUsers = () => Promise.resolve(fakeUsersFromServer);
